@@ -1,0 +1,27 @@
+.calendar {
+    display: flex;
+    align-items: center;
+    @include sm(justify-content, space-between);
+
+    &__text {
+        line-height: 40px;
+        font-size: 35px;
+        font-weight: 300;
+        @include sm(font-size, 30px);
+    }
+
+    &__text--right {
+        margin-right: 20px;
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    &__btn--size {
+        width: 40px;
+        height: 40px;
+    }
+}

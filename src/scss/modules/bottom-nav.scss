@@ -1,0 +1,24 @@
+.bottom-nav {
+    &--size {
+        flex-basis: 20%;
+    }
+
+    &__list {
+        @include sm(margin, 20px 0);
+    }
+    
+    &__link--bottom {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        a {
+            text-decoration: none;
+            color: $black;
+
+            &:hover {
+                color: #8e8e93;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.main {
+    padding-top: 45px;
+
+    &__wrapper {
+        @include wrapper();
+    }
+
+    &__top {
+        display: flex;
+        @include sm(flex-direction, column);
+    }
+}
+  

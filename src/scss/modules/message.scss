@@ -1,0 +1,228 @@
+.message {
+    @include row-flex();
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    padding-right: 40px;
+    @include sm(padding-right, 0);
+
+    &--border {
+        border-bottom:  1px solid #E5E5EA;
+    }
+
+    &--border:last-child {
+        border-bottom:  none;
+        margin-bottom: 30px;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &--size {
+            @include col();
+            @include size(3);
+            @include size-sm(6);
+        }
+
+        &--normal {
+            color: $black;
+        }
+
+        &--agreement {
+            color: #FF3B30;
+
+            &::after {
+                content: 'Согласование';
+                position: absolute;
+                font-size: 13px;
+                bottom: -10px;
+                left: 90px;
+            }
+
+            &::before {
+                content: url('../img/watch.svg');
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                bottom: -9px;
+                left: 70px;
+            }
+        }
+    }
+
+    &__number {
+        font-size: 50px;
+
+        &--right {
+            margin-right: 10px;
+        }
+    }
+
+    &__name {
+        &--color_main {
+            color: $theme-color;
+        }
+
+        &--color_red {
+            color: #FF3B30;
+        }
+    }
+
+    &__descr {
+        font-size: 13px;
+    }
+
+    &__month {
+        line-height: 22px;
+    }
+
+    &__time {
+        line-height: 22px;
+    }
+
+    &__info {
+        line-height: 22px;
+        position: relative;
+        padding-left: 100px;
+
+        &--size {
+            @include col();
+            @include size(6);
+            @include size-sm(12);
+            @include sm(order, 2);
+            @include sm(margin-top, 30px);
+        }
+    }
+
+    &__country {
+        position: absolute;
+
+        &--pos {
+            top: -5px;
+            left: 0px;
+        }
+    
+        &--size {
+            width: 50px;
+            height: 50px;
+        }
+    
+        &--germany {
+            background: url('../img/germany.svg') no-repeat center center;
+        }
+
+        &--portugal {
+            background: url('../img/portugal.svg') no-repeat center center;
+        }
+    }
+
+    &__avatar {
+        position: absolute;
+
+        &--pos {
+            top: -8px;
+            left: 25px;
+        }
+
+        &--size {
+            width: 56px;
+            height: 56px;
+        }
+
+        &--user1 {
+            background: url('../img/user1.png') no-repeat center center;
+        }
+
+        &--user2 {
+            background: url('../img/user2.png') no-repeat center center;
+        }
+
+        &--user3 {
+            background: url('../img/user3.png') no-repeat center center;
+        }
+
+        &--user4 {
+            background: url('../img/user4.png') no-repeat center center;
+        }
+
+        &--phone {
+            background: url('../img/phone.svg') no-repeat center center;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #EFEFF4;
+            border-radius: 50%;
+            background-color: $white;
+        }
+    }
+
+
+    &__control {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--size {
+            @include col();
+            @include size(3);
+            @include size-sm(4);
+            @include size-xs(5);
+            @include size-xxs(6);
+            @include sm(order, 1);
+        }
+    }
+
+    &__flag {
+        &--size {
+            width: 50px;
+            height: 50px;
+        }
+    
+        &--germany {
+            background: url('../img/germany.svg') no-repeat center center;
+        }
+
+        &--russia {
+            background: url('../img/russia.svg') no-repeat center center;
+        }
+
+        &--britan {
+            background: url('../img/britan.svg') no-repeat center center;
+        }
+    }
+
+    &__menu {
+        position: relative;
+        button {
+           background-color: transparent;
+           border: none;
+
+           &:hover {
+            cursor: pointer;
+        }
+        }
+    }
+
+    &__options {
+        display: none;
+        position: absolute;
+        background: #F9F8FC;
+        text-align: center;
+        padding: 10px 20px;
+
+        li {
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #8E8E93;
+        }
+
+        &--pos {
+            top: 25px;
+            right: 10px;
+        }
+    }
+}

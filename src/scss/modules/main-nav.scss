@@ -1,0 +1,43 @@
+.main-nav {
+
+    &--size {
+        flex-basis: 50%;
+        @include sm(flex-basis, 0);
+    }
+    
+    &__item {
+        display: inline-block;
+    }
+
+    &__item--right {
+        margin-right: 40px;
+    }
+
+    &__item--right:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: #466AAA;
+        }
+    }
+
+    &__list {
+        @include sm(display, none);
+    }
+
+    &__list--mobile {
+        display: none;
+    }
+
+    &__sandwich {
+        display: none;
+        border: none;
+        background-color: transparent;
+        @include sm(display, block);
+    }
+}

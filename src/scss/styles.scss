@@ -1,0 +1,53 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/smart-grid";
+
+html {
+  @include reset();
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $black;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.tabs {
+  min-height: 850px;
+}
+
+
+//Модули
+@import "modules/header";
+@import "modules/logo";
+@import "modules/main-nav";
+@import "modules/user-info";
+@import "modules/main";
+@import "modules/navigation";
+@import "modules/calendar";
+@import "modules/chat";
+@import "modules/message";
+@import "modules/footer";
+@import "modules/bottom-nav";
+@import "modules/app";
+@import "modules/social";

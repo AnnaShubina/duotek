@@ -1,0 +1,28 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		link(rel="stylesheet" type='text/css' href="css/styles.css")
+
+	body
+		.wrap
+			.content
+				include ../modules/header
+				main.main
+					._wrapper
+						block content
+			include ../modules/footer
+		script(src="js/lib/jquery-3.3.1.min.js")
+		script(src="js/main.js")
+		block script

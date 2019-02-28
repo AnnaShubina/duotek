@@ -1,0 +1,19 @@
+.logo--color_white {
+    path {
+        fill: $white;
+    }
+
+    path:last-child {
+        fill: $theme-color;
+    }
+}
+
+.logo--color_grey {
+    path {
+        fill: #DADADA;
+    }
+
+    path:last-child {
+        fill: $white;
+    }
+}

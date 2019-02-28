@@ -1,0 +1,23 @@
+mixin message(number, month, time, country, name, descr, avatar, type, flag, status, color)
+    .message.-border
+        ._date.-size(class=status)
+            ._number.-right=number
+            div
+                ._month=month
+                ._time=time
+        ._info.-size
+            article
+                ._country.-pos.-size(class=country)
+                ._avatar.-pos.-size(class=avatar)
+                ._name(class=color)=name
+                p._descr=descr
+        ._control.-size
+            ._type=type
+            ._flag.-size(class=flag)
+            ._menu
+                button
+                    include ../../img/circle.svg
+                ul._options.-pos
+                    li: a(href="#") Выделить
+                    li: a(href="#") В архив
+                    li: a(href="#") Удалить

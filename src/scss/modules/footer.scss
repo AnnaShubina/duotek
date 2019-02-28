@@ -1,0 +1,19 @@
+.footer {
+    background-color: #F6F6F6;
+    @include xs(display, none);
+    
+    &--top {
+        margin-top: 95px;
+    }
+
+    &__wrapper {
+        @include wrapper();
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 0 85px 0;
+        @include sm(flex-direction, column);
+    }
+}

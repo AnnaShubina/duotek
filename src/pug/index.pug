@@ -1,0 +1,10 @@
+extends template/main
+
+block variables
+	- var title = 'Duotek test'
+
+block content
+	.main__top
+		include modules/calendar
+		include modules/navigation
+	include modules/chat	

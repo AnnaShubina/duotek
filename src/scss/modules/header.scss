@@ -1,0 +1,16 @@
+.header {
+    background-color: $theme-color;
+    padding: 22px 0;
+    color: $white;
+    letter-spacing: 0.03em;
+
+    &__wrapper {
+        @include wrapper();
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

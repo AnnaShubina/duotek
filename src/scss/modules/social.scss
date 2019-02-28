@@ -1,0 +1,27 @@
+.social {
+    &--size {
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+        @include sm(margin-top, 20px);
+    }
+
+    &__link {
+        &--size {
+            width: 20px;
+            height: 20px;
+        }
+
+        &--src_facebook {
+            background: url('../img/facebook.svg') no-repeat center center;
+        }
+
+        &--src_vk {
+            background: url('../img/vk.svg') no-repeat center center;
+        }
+
+        &--src_instagram {
+            background: url('../img/instagram.svg') no-repeat center center;
+        }
+    }
+}

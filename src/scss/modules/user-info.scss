@@ -1,0 +1,59 @@
+.user-info {
+    position: relative;
+    @include sm('display', 'none');
+
+    &__avatar {
+        position: absolute;
+    }
+
+    &__avatar--left {
+        top: 0;
+        left: -60px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__descr {
+        font-size: 13px;
+        color: $theme-color;
+        display: flex;
+        font-weight: 600;
+        line-height: 21px;
+    }
+
+    &__name--bottom {
+        margin-bottom: 7px;
+    }
+
+    &__money {
+        padding: 4px 0;
+        padding-left: 8px;
+        background-color: $white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-right: 10px;
+    }
+
+    &__sum {
+        padding: 4px 0;
+        padding-right: 8px;
+        background-color: $white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 10px;
+
+        img {
+            vertical-align: top;
+        }
+
+        span {
+            margin-right: 5px;
+        }
+    }
+
+    &__money--border {
+        border-left: 1px solid #D1D1D6;
+    }
+}

@@ -1,0 +1,17 @@
+.app {
+    &--size {
+        flex-basis: 33%;
+    }
+    
+    &__text {
+        color: #8E8E93;
+
+        &--bottom {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link--right {
+        margin-right: 5px;
+    }
+}

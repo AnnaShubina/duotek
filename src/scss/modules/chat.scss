@@ -1,0 +1,20 @@
+.chat {
+
+    &--border {
+        border-bottom:  1px solid #E5E5EA;
+    }
+
+    &--top {
+        margin-top: 40px;
+    }
+
+    &__top {
+        background-color: #F9F8FC;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #8E8E93;
+        text-transform: uppercase;
+        padding: 7px 14px;
+    }
+
+}
